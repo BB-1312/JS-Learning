@@ -1,9 +1,7 @@
-// program to print a text
+// Arrow function version
+const greet = (name = "there") => {
+    console.log(`Hello, ${name}!`);
+};
 
-// declaring a function
-function greet() {
-    console.log("Hello there!");
-}
-
-// calling the function
-greet();
+greet();          // Hello, there!
+greet("Sujal"); // Hello, Sujal!
