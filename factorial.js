@@ -1,18 +1,10 @@
-var number = 2
-if (number < 0) {
-    console.log('Error');
+let number = 5;
+let fact = 1;
+let i = 1;
+
+while (i <= number) {
+    fact *= i;
+    i++;
 }
 
-// if number is 0
-else if (number === 0) {
-    console.log(`The factorial of ${number} is 1.`);
-}
-
-// if number is positive
-else {
-    let fact = 1;
-    for (i = 1; i <= number; i++) {
-        fact *= i;
-    }
-    console.log(fact);
-}
+console.log(`Factorial of ${number} is ${fact}`);
