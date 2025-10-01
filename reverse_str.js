@@ -1,17 +1,8 @@
-// program to reverse a string
+// program to reverse a string using built-in methods
 
 function reverseString(str) {
-
-    // empty string
-    let newString = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-        newString += str[i];
-    }
-    return newString;
+    return str.split("").reverse().join("");
 }
 
-// take input from the user
-const string = prompt('Enter a string: ');
-
-const result = reverseString(string);
-console.log(result);
+const string = prompt("Enter a string: ");
+console.log(reverseString(string));
