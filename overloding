@@ -1,0 +1,15 @@
+// Method Overriding Example
+class Vehicle {
+  start() {
+    console.log("Starting vehicle...");
+  }
+}
+
+class Car extends Vehicle {
+  start() {
+    console.log("Car engine started smoothly!");
+  }
+}
+
+const car = new Car();
+car.start(); // Output: Car engine started smoothly!
